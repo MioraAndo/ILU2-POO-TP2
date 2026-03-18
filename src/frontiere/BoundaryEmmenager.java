@@ -1,6 +1,9 @@
 package frontiere;
 
 import controleur.ControlEmmenager;
+import personnages.Druide;
+import personnages.Gaulois;
+import villagegaulois.Village;
 
 public class BoundaryEmmenager {
 	private ControlEmmenager controlEmmenager;
@@ -27,7 +30,13 @@ public class BoundaryEmmenager {
 					break;
 
 				case 2:
-					//TODO a completer
+					System.out.println("Bienvenue villageois"+nomVisiteur);
+					System.out.println("quelle est votre force?");
+					int force=Clavier.entrerEntier(nomVisiteur);
+					controlEmmenager.ajouterGaulois(nomVisiteur, force);
+					
+					
+				
 					break;
 
 				default:
@@ -40,6 +49,11 @@ public class BoundaryEmmenager {
 	}
 
 	private void emmenagerDruide(String nomVisiteur) {
-		//TODO a completer
+		System.out.println("Bienvenue druide"+nomVisiteur);
+		System.out.println("quelle est votre force?");
+		int force=Clavier.entrerEntier(nomVisiteur);
+		
+		
 	}
+	
 }
