@@ -9,7 +9,11 @@ public class BoundaryAfficherMarche {
 		this.controlAfficherMarche = controlAfficherMarche;
 	}
 
-	public void afficherMarche(String nomAcheteur) {
-
+	public String afficherMarche(String nomAcheteur) {
+		String infosMarche=controlAfficherMarche.donnerInfosMarche();
+		return infosMarche;
+		//a finir et a corriger
+		
 	}
+	
 }
