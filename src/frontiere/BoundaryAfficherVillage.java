@@ -1,6 +1,7 @@
 package frontiere;
 
 import controleur.ControlAfficherVillage;
+import personnages.*;
 
 public class BoundaryAfficherVillage {
 	private ControlAfficherVillage controlAfficherVillage;
