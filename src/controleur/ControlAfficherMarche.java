@@ -9,8 +9,8 @@ public class ControlAfficherMarche {
 		this.village = village;
 	}
 
-	public String donnerInfosMarche() {
-		String infosMarche=String.valueOf(village.donnerEtatMarche());
-		return infosMarche;
+	public String[] donnerInfosMarche() {
+		return village.donnerEtatMarche();
+		
 	}
 }
